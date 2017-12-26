@@ -6,7 +6,7 @@ RUN sed -i.bak -e "s%http://archive.ubuntu.com/ubuntu/%http://ftp.riken.jp/Linux
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir superset==0.22.1
+RUN pip install --no-cache-dir superset==0.22.1 psycopg2==2.7.3.2
 
 ENV SUPERSET_HOME /superset
 
